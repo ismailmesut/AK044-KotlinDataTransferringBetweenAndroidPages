@@ -7,6 +7,10 @@ android {
     namespace = "com.ismailmesutmujde.kotlindatatransferringbetweenandroidpages"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.ismailmesutmujde.kotlindatatransferringbetweenandroidpages"
         minSdk = 24
