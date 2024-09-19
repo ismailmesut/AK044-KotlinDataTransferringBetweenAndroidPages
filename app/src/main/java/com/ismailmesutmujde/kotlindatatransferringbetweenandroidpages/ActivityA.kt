@@ -16,10 +16,13 @@ class ActivityA : AppCompatActivity() {
         setContentView(view)
 
         bindingA.buttonSend.setOnClickListener {
+
+            val person = Persons(99999, "İsmail", 1.98)
             val newIntent = Intent(this@ActivityA, ActivityB::class.java)
             newIntent.putExtra("message","Hello")
             newIntent.putExtra("age", 23)
             newIntent.putExtra("height", 1.78)
+            newIntent.putExtra("object", person)
             startActivity(newIntent)
         }
 

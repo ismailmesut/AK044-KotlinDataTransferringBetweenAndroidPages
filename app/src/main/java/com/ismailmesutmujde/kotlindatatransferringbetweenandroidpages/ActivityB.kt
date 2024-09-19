@@ -17,5 +17,11 @@ class ActivityB : AppCompatActivity() {
         Log.e("MESSAGE", incomingMessage.toString())
         Log.e("AGE", incomingAge.toString())
         Log.e("HEIGHT", incomingHeight.toString())
+
+        val incomingPerson = intent.getSerializableExtra("object") as Persons
+        Log.e("PERSON TCNO", incomingPerson.tcno.toString())
+        Log.e("PERSON NAME", incomingPerson.name)
+        Log.e("PERSON HEIGHT", incomingPerson.height.toString())
+
     }
 }
